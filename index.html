@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="script.js"></script>
-    <script></script>
+    <title>Rock-paper-scissor</title>
+
+    <script>
+      function startGame() {
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+      }
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1>Welcome to Rock-paper-scissors</h1>
+    <p>In this game you will play against the computer.</p>
+    <p>
+      You can choose between <strong>rock</strong>, <strong>paper</strong> or
+      <strong>scissors.</strong>
+      What will you choose?
+    </p>
+    <button onclick="startGame()" style="color: blueviolet">Start game</button>
+    <script src="script.js"></script>
+  </body>
 </html>
